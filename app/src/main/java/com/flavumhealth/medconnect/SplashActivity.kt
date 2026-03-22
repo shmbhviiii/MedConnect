@@ -27,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
             val background: Thread = object : Thread() {
                 override fun run() {
                     try {
-                        sleep(1500)
+                        sleep(1000)
                         val intent = Intent(this@SplashActivity, LoginActivity::class.java)
                         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
